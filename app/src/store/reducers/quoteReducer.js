@@ -1,5 +1,5 @@
 const initialState = {
-qoute: '',
+message: '',
 isFetching: false,
 error: ''
 };
@@ -16,9 +16,9 @@ export const quoteReducer = (state = initialState, action) => {
     return {
     ...state,
     isFetching: false,
-    quote: action.payload,
+    message: action.payload,
     error: ''
     };
-    return state;
+  return state;
 }
 };
